@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    margin-top: 20px;
+}
+
+.message>a {
+    color: blue;
+    text-decoration: none;
+}
+
+.container {
+    margin-top: 30px;
+    height: 600px;
+    position: relative;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+}
+
+.users_container {
+    display: flex;
+    align-items: end;
+    position: absolute;
+}
+
+.user {
+    cursor: pointer;
+    margin: 0 2px;
+    background-image: url("./assets/img/man_empty.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.user.small {
+    height: 25px;
+    width: 12px;
+    order: 1;
+}
+
+.user.medium {
+    height: 40px;
+    width: 18px;
+    order: 2;
+}
+
+.user.large {
+    height: 55px;
+    width: 22px;
+    order: 3;
+}
+
+.user.large:hover,
+.user.large:hover~.user.medium,
+.user.large:hover~.user.small {
+    background-image: url("./assets/img/man_filled.png");
+}
+
+.user.medium:hover,
+.user.medium:hover~.user.small {
+    background-image: url("./assets/img/man_filled.png");
+}
+
+.user.small:hover {
+    background-image: url("./assets/img/man_filled.png");
+}
+
+.users_container.north_america {
+    top: 220px;
+    left: 200px;
+}
+
+.users_container.south_america {
+    top: 400px;
+    left: 310px;
+}
+
+.users_container.europe {
+    top: 210px;
+    left: 520px;
+}
+
+.users_container.asia {
+    top: 280px;
+    left: 760px;
+}
+
+.users_container.australia {
+    top: 450px;
+    left: 860px;
+}
+
+.users_container.asia {
+    top: 280px;
+    left: 760px;
+}
+
+/*#usersWrapper {
+    display: none;
+}*/
+
+#objectStorageWrapper {
+    display: none;
+}
+
+.objectStorage {
+    position: absolute;
+    background-image: url("./assets/img/circle_empty.png");
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.objectStorage:hover {
+    background-image: url("./assets/img/circle_filled.png");
+}
+
+.objectStorage.west_america {
+    top: 265px;
+    left: 140px;
+}
+
+.objectStorage.east_america {
+    top: 250px;
+    left: 295px;
+}
+
+.objectStorage.germany {
+    top: 225px;
+    left: 510px;
+}
+
+.objectStorage.singapore {
+    top: 400px;
+    left: 800px;
+}
+
+.userDevice {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    display: none;
+}
+
+.userDevice.small {
+    background-image: url("./assets/img/small.png");
+}
+
+.userDevice.medium {
+    background-image: url("./assets/img/medium.png");
+}
+
+.userDevice.large {
+    background-image: url("./assets/img/large.png");
+}
+
+/*North America*/
+
+.usersDevice_container.north_america .userDevice.small {
+    top: 225px;
+    left: 245px;
+}
+
+.usersDevice_container.north_america .userDevice.medium {
+    top: 280px;
+    left: 190px;
+}
+
+.usersDevice_container.north_america .userDevice.large {
+    top: 200px;
+    left: 180px;
+}
+
+/*Soute America*/
+
+.usersDevice_container.south_america .userDevice.small {
+    top: 430px;
+    left: 350px;
+}
+
+.usersDevice_container.south_america .userDevice.medium {
+    top: 475px;
+    left: 305px;
+}
+
+.usersDevice_container.south_america .userDevice.large {
+    top: 390px;
+    left: 295px;
+}
+
+/*Europe*/
+
+.usersDevice_container.europe .userDevice.small {
+    top: 220px;
+    left: 565px;
+}
+
+.usersDevice_container.europe .userDevice.medium {
+    top: 250px;
+    left: 475px;
+}
+
+.usersDevice_container.europe .userDevice.large {
+    top: 170px;
+    left: 625px;
+}
+
+/*Asia*/
+
+.usersDevice_container.asia .userDevice.small {
+    top: 300px;
+    left: 800px;
+}
+
+.usersDevice_container.asia .userDevice.medium {
+    top: 310px;
+    left: 710px;
+}
+
+.usersDevice_container.asia .userDevice.large {
+    top: 230px;
+    left: 845px;
+}
+
+/*Australia*/
+
+.usersDevice_container.australia .userDevice.small {
+    top: 470px;
+    left: 920px;
+}
+
+.usersDevice_container.australia .userDevice.medium {
+    top: 470px;
+    left: 870px;
+}
+
+.usersDevice_container.australia .userDevice.large {
+    top: 470px;
+    left: 825px;
+}

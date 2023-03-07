@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteCloud</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="message" id="message">
+        Where are you users? Choose the number for every region.
+    </div>
+    <div class="container">
+        <img class="map" src="./assets/img/map.png" alt="Map">
+        <div id="usersWrapper">
+            <div class="users_container north_america" data-continent="north_america">
+                <div class="user large" data-users="3"></div>
+                <div class="user medium" data-users="2"></div>
+                <div class="user small" data-users="1"></div>
+            </div>
+            <div class="users_container south_america" data-continent="south_america">
+                <div class="user large" data-users="3"></div>
+                <div class="user medium" data-users="2"></div>
+                <div class="user small" data-users="1"></div>
+            </div>
+            <div class="users_container europe" data-continent="europe">
+                <div class="user large" data-users="3"></div>
+                <div class="user medium" data-users="2"></div>
+                <div class="user small" data-users="1"></div>
+            </div>
+            <div class="users_container asia" data-continent="asia">
+                <div class="user large" data-users="3"></div>
+                <div class="user medium" data-users="2"></div>
+                <div class="user small" data-users="1"></div>
+            </div>
+            <div class="users_container australia" data-continent="australia">
+                <div class="user large" data-users="3"></div>
+                <div class="user medium" data-users="2"></div>
+                <div class="user small" data-users="1"></div>
+            </div>
+        </div>
+        <div id="objectStorageWrapper">
+            <div class="objectStorage west_america"></div>
+            <div class="objectStorage east_america"></div>
+            <div class="objectStorage germany"></div>
+            <div class="objectStorage singapore"></div>
+        </div>
+        <div id="usersDeviceWrapper">
+            <div class="usersDevice_container north_america" data-continent="north_america">
+                <div class="userDevice small"></div>
+                <div class="userDevice medium"></div>
+                <div class="userDevice large"></div>
+            </div>
+            <div class="usersDevice_container south_america" data-continent="south_america">
+                <div class="userDevice small"></div>
+                <div class="userDevice medium"></div>
+                <div class="userDevice large"></div>
+            </div>
+            <div class="usersDevice_container europe" data-continent="europe">
+                <div class="userDevice small"></div>
+                <div class="userDevice medium"></div>
+                <div class="userDevice large"></div>
+            </div>
+            <div class="usersDevice_container asia" data-continent="asia">
+                <div class="userDevice small"></div>
+                <div class="userDevice medium"></div>
+                <div class="userDevice large"></div>
+            </div>
+            <div class="usersDevice_container australia" data-continent="australia">
+                <div class="userDevice small"></div>
+                <div class="userDevice medium"></div>
+                <div class="userDevice large"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
