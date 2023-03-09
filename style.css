@@ -19,6 +19,22 @@ body {
     text-decoration: none;
 }
 
+.message>button {
+    vertical-align: bottom;
+}
+
+/*.message>button {
+    background: none;
+    color: blue;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message>button:disabled {
+    color: rgb(172, 172, 251);
+}*/
+
 .container {
     margin-top: 30px;
     height: 600px;
@@ -111,11 +127,11 @@ body {
     display: none;
 }*/
 
-#objectStorageWrapper {
+#serverWrapper {
     display: none;
 }
 
-.objectStorage {
+.server {
     position: absolute;
     background-image: url("./assets/img/circle_empty.png");
     background-size: contain;
@@ -124,28 +140,36 @@ body {
     cursor: pointer;
 }
 
-.objectStorage:hover {
+.server:hover {
     background-image: url("./assets/img/circle_filled.png");
 }
 
-.objectStorage.west_america {
+.server.west_america {
     top: 265px;
     left: 140px;
 }
 
-.objectStorage.east_america {
+.server.east_america {
     top: 250px;
     left: 295px;
 }
 
-.objectStorage.germany {
+.server.germany {
     top: 225px;
     left: 510px;
 }
 
-.objectStorage.singapore {
+.server.singapore {
     top: 400px;
     left: 800px;
+}
+
+.server[data-type="objectStorage"] {
+    background-image: url("./assets/img/server.png");
+}
+
+.server[data-type="byteCloud"] {
+    background-image: url("./assets/img/server_ByteCloud.png");
 }
 
 .userDevice {
@@ -251,4 +275,66 @@ body {
 .usersDevice_container.australia .userDevice.large {
     top: 470px;
     left: 825px;
+}
+
+/*Parsing*/
+
+@keyframes loadingSmall {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 33px;
+    }
+}
+
+@keyframes loadingMedium {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20px;
+    }
+}
+
+@keyframes loadingLarge {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 13px;
+    }
+}
+
+.userDevice.small .parsing {
+    background-color: blue;
+    width: 33px;
+    height: 18px;
+    top: 9px;
+    left: 4px;
+    position: absolute;
+    animation: loadingSmall forwards 3s;
+}
+
+.userDevice.medium .parsing {
+    background-color: blue;
+    width: 20px;
+    height: 27px;
+    top: 6px;
+    left: 10px;
+    position: absolute;
+    animation: loadingMedium forwards 3s;
+}
+
+.userDevice.large .parsing {
+    background-color: blue;
+    width: 13px;
+    height: 9px;
+    top: 12px;
+    left: 14px;
+    position: absolute;
+    animation: loadingLarge forwards 3s;
 }
